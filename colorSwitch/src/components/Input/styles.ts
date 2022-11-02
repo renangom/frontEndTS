@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-
-`
+export const InputBox = styled.div`
+    position: relative;
+`;
 
 export const InputHtml = styled.input`
     width: 100%;

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, InputHtml} from './styles';
+import { InputBox, InputHtml} from './styles';
 
 
 interface InputProps{
@@ -8,8 +8,8 @@ interface InputProps{
 }
 export default function Input({placeHolder, type}: InputProps) {
   return (
-    <Container>
-        <InputHtml placeholder={placeHolder} type={type}  />
-    </Container>
+        <InputBox>
+            <InputHtml placeholder={placeHolder} type={type}  />
+        </InputBox>
   )
 }
