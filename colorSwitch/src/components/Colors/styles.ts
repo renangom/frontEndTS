@@ -21,4 +21,11 @@ export const Span = styled.span`
         cursor: pointer;
         background: ${props => props.color};
         transition: 0.5s;
+
+        &.active{
+            border: 2px solid #000;
+            width: 30px;
+            height: 30px;
+        }
 `;
+

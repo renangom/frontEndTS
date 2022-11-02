@@ -8,11 +8,6 @@ export const Container = styled.div`
     padding: 50px;
     background: #fff;
 
-    > h2 {
-        font-weight: 300;
-        border-left: 15px solid #1dd1a1;
-        padding-left: 10px;
-    }
 
     > div {
         display: flex;
@@ -37,4 +32,10 @@ export const LoginButton = styled.button`
     font-size: 1em;
     padding: 10px 15px;
     outline: none;
+`;
+
+export const Title = styled.h2`
+    font-weight: 300;
+    border-left: 15px solid ${props => props.color};
+    padding-left: 10px;
 `;

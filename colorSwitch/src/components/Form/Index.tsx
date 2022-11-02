@@ -1,13 +1,13 @@
 import React from 'react'
 import Input from '../Input/Index'
-import { Container, LoginButton } from './styles'
+import { Container, LoginButton, Title } from './styles'
 
 export default function Form() {
     const theme = localStorage.getItem('color');
     console.log(theme)
   return (
     <Container>
-        <h2> Login </h2>
+        <Title color={`${theme}`}> Login </Title>
         <Input placeHolder='Username' type='text' />
         <Input placeHolder='Password' type='password' />
         <LoginButton color={`${theme}`}> Login </LoginButton>

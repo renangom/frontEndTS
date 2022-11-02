@@ -9,12 +9,12 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #1dd1a1;
+  background-color: ${props => props.color};
 `;
 function App() {
-
+  const theme = localStorage.getItem('color')
   return (
-    <Container>
+    <Container color={`${theme}`}>
       <Form />
       <Colors />
       <GlobalStyle />
